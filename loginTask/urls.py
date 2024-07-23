@@ -7,6 +7,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('tasks/', include('tasks.urls')),
     path('accounts/', include('accounts.urls')), 
-    path('accounts/', include('django.contrib.auth.urls')),  # Asegúrate de tener las URLs de autenticación incluidas
+    path('accounts/', include('django.contrib.auth.urls')), 
     path('', lambda request: redirect('login')),
 ]
